@@ -1,4 +1,5 @@
 opencv-python-headless
+langchain
 fpdf2
 pathlib
 Pillow
