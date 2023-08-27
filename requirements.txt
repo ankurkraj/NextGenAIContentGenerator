@@ -1,4 +1,5 @@
 opencv-python-headless
+langchain
 fpdf2
 pathlib
 Pillow
@@ -8,4 +9,7 @@ openai
 pdfminer
 python-docx
 tiktoken
+<<<<<<< HEAD
 wikipedia
+=======
+>>>>>>> b6ab93eed90986a28cdd7b660515047ba0295a70
