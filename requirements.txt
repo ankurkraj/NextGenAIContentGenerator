@@ -1,9 +1,10 @@
+opencv-python-headless
 fpdf2
 pathlib
-PIL
+Pillow
 streamlit
 pdf2docx
 openai
 pdfminer
-docx
+python-docx
 tiktoken
