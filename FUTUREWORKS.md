@@ -13,8 +13,8 @@ Engineering, and could not give it a lot of time. </br>
 <br> (3) **Data backed content** - I wanted to make the content more useful backing it up by data and graphs ,but they would not fit in
 all kind of contexts and the model outputs with this feature were inconsistent. So, I decided to remove this idea. I would love to make this feature
 more consistent and this is guaranteed to give better results. </br>
-<br> (4) Better cloud deployment - I wanted to deploy it on the cloud using AWS, but I was constantly getting some errors, and since the time was
-not so much, I dropped this idea. This would give the model a stable deploy, and a CI/CD pipeline would allow continuous optimizations. </br>
+<br> (4) **Better cloud deployment** - I wanted to deploy it on the cloud using AWS, but I was constantly getting some errors, and since the time was
+not so much, I dropped this idea. This would give the model a stable deploy, and a **CI/CD pipeline** would allow continuous optimizations. </br>
 
 ## Future Ideas
 These are the ideas that I did not try to implement and kept it for future plans :
