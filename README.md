@@ -5,6 +5,8 @@ A brief introduction about myself.
 <br> Hi, My name is **Ankur Kumar Raj**, I am a final year undergraduate at IIT Kanpur, my primary interests include competitive programming, machine learning and deep learning. </br>
 <br> Officially registered email ID on unstop - mr.anon57@gmail.com </br>
 <br> College Email ID - ankurkraj20@iitk.ac.in </br>
+<br> You can read about the methodology of the code at [PROCESS.MD](https://github.com/ankurkraj/NextGenAIContentGenerator/blob/main/PROCESS.md). and the scope of improvement over at </br>
+<br> 
 
 ## Problem Statement and Key Requirements
 >**Problem 2**: Design & Develop an impressive tool that utilizes generative AI to generate content while maintaining the style and tone of previously written content.
@@ -64,4 +66,5 @@ I have taken care all the points that was mentioned in the problem statement whi
 <br> (4) The drawback of LLMs is that their vast knowledge is limited by time which they were trained in, **their information is limited**, to tackle this problem I have used the **Google Search API and the Wikipedia API**, to provide the model latest information. </br>
 <br> (5) The model can understand inputs in **multiple languages**, I have tried using Hindi for the model and it works extremetly well for that too, although the responses produed are still in **English** though.</br>
 <br> (6) The response are produced are **extremely well formatted** and relevant to the context that is given in input. The PDF produced is **aesthetically pleasing** and there has been no compromise with the quality of responses. </br>
+<br> (7) **Well organized and modular code** - The coding style is very clean, and modular, all the tasks have been handeled by functions, the code has been separated in to four parts, main.py is the proimary frontend of the model, response creator holds that backend of the model, while pdf creator is responsible for creating PDF and output formatting, and document formatter for preprocessing the inputs of various formatsThe code is very **well commented** </br>.
 
