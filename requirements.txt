@@ -1,6 +1,6 @@
 fpdf2
 pathlib
-PIL
+Pillow
 streamlit
 pdf2docx
 openai
