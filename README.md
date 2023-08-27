@@ -28,7 +28,7 @@ I have deployed the app at **https://techsurf2023.streamlit.app/**, and you can 
 
 OpenAI API Key can be obtained from https://platform.openai.com/account/api-keys and the Serper API key from https://serper.dev/. In case you face any issues with obtaining the API key, you can mail me at mr.anon57@gmail.com and I will send you my keys which you can use for running it locally
 <br> (4) Run the following command  </br>
-`pip install requirements.txt`
+`pip install local_running_requirements.txt`
 <br> (5) Then run the following command </br>
 `streamlit run main.py`
 <br> If everything workd out fine you should get a following message</br>
