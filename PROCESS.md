@@ -1,5 +1,6 @@
 # Process
 I would here like to discuss the process which the model went through in its making, the choices that I made and the places which took most time and effort.
+
 ## Model Choice
 Choosing the right model for these kind of tasks was very important ,and I made the decision to use th **GPT-3.5 turbo** model,
 I wanted to use an open source model, but did'nt. Here are the reasons for my model choice
@@ -25,6 +26,16 @@ I felt that this is the one idea that would make my stand out among all the othe
 This was the **most challenging** part, to format a PDF of unknown content. Here is how I implemented it:
 <br> (1) I used **output parsers** to output some useless text and use fpdf2 library to carefully organize the text, and images .</br>
 <br> (2) This took a lot of my time and I believe it gave my project the aesthetics that it currently has, and is apparent in the result. </br>
+
+## Interface
+For interface I decided to use **Streamlit**, which is a very popular choice to make simple apps. Since, I was told not to focus much on the interface, and keep it **simple and user friendly**, I have done exactly that
+<br> (1) I have created *simple components for all the stuff, and **input and output** . </br>
+<br> (2) There is **sidebar** with additional features and instructions to run the app properly and use all its properties. </br>
+
+## Deployment
+For deploying I decided to use **streamlit cloud**, it provides the basic functionalities to deploy a streamlit based app. Here is how I did it:
+<br> (1) Connected the app to this github's repository, and it fetches the code on its own. I had to prepare a requirements.txt to make it aware of the necessaary libraries that it would need for running it locally. </br>
+<br> (2) There was a problem I faced with the installing the requirements so I had to search for a solution and solved it by adding a **packages.txt** to handle some relevant libraries.</br> 
 
 <br>**Overall, the area where I had to spend most of my time was in prompt engineering, the amazing outputs that my model presents, and the vivdly abstract images
 are a result of rigorous prompt engineering**</br>
