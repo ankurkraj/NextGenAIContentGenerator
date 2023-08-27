@@ -6,7 +6,7 @@ Pillow
 streamlit
 pdf2docx
 openai
-pdfminer
+pdfminer.six
 python-docx
 tiktoken
 wikipedia
