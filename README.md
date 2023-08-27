@@ -1,14 +1,14 @@
-# TechSurf 2023 by ContentStack
+# 🖥️ TechSurf 2023 by ContentStack 🖥️
 Submission by Ankur Kumar Raj for **Problem Statement 2**.
 ## About me
 A brief introduction about myself.
-<br> Hi, My name is **Ankur Kumar Raj**, I am a final year undergraduate at IIT Kanpur, my primary interests include competitive programming, machine learning and deep learning. </br>
-<br> Officially registered email ID on unstop - mr.anon57@gmail.com </br>
-<br> College Email ID - ankurkraj20@iitk.ac.in </br>
-<br> You can read about the methodology of the code at [PROCESS.MD](https://github.com/ankurkraj/NextGenAIContentGenerator/blob/main/PROCESS.md). and the scope of improvement over at </br>
+<br> 🖐️ Hi , My name is **Ankur Kumar Raj**, I am a final year undergraduate at IIT Kanpur, my primary interests include competitive programming, machine learning and deep learning. </br>
+<br> Officially registered email ID on unstop -📧 [mr.anon57@gmail.com](mailto:mr.anon57@gmail.com) </br>
+<br> College Email ID -📧 [ankurkraj20@iitk.ac.in](mailto:ankurkraj20@iitk.ac.in) </br>
+<br> You can read about the methodology of the code at [PROCESS.MD](https://github.com/ankurkraj/NextGenAIContentGenerator/blob/main/PROCESS.md). and the scope of improvement over at [FUTUREWORKS.MD](https://github.com/ankurkraj/NextGenAIContentGenerator/blob/main/FUTUREWORKS.md)</br>
 <br> 
 
-## Problem Statement and Key Requirements
+## 🧾 Problem Statement and Key Requirements
 >**Problem 2**: Design & Develop an impressive tool that utilizes generative AI to generate content while maintaining the style and tone of previously written content.
 ><br> Key Requirements: </br>
 ><br> ●	Generative AI Implementation: Build a robust generative AI model capable of analyzing and understanding the nuances of existing content. </br>
@@ -17,7 +17,7 @@ A brief introduction about myself.
 ><br> ●	User-Friendly Interface: Create an intuitive and user-friendly interface that allows users to input their existing title/headlines and receive generated content that matches their writing style. </br>
 ><br> ●	Quality and Accuracy: Strive for high-quality and accurate content generation by fine-tuning and optimizing the generative AI model. </br>
 
-## Running it locally
+## 🏃 Running it locally
 I have deployed the app at **https://techsurf2023.streamlit.app/**, and you can access it directly from there, if you wish to run it locally kindly ensure that python >=3.9, and pip is installed and then take care of the following steps:-
 <br> (1) Clone this repository (https://github.com/ankurkraj/NextGenAIContentGenerator) </br>
 <br> (2) In the terminal open the folder of this repository </br>
@@ -37,7 +37,7 @@ OpenAI API Key can be obtained from https://platform.openai.com/account/api-keys
 
 Then you can click on any of the two links and it should be working alright from there.
 
-## Results 
+## 💹 Results 💹
 <br>I just want to say that I thoroughly enjoyed the project and gave it my best to make it as good as possible. I have summarized all the steps and what I have done to make the project what it is today at [PROCESS.MD](https://github.com/ankurkraj/NextGenAIContentGenerator/blob/main/PROCESS.md), the amount of research and efforts that I have put and the decisions that I have taken and the reasons behind them. There are additional points at futureworks.md, where I mention about the things that I would like to work on if I was given more time. Finally here are the results of the kind of response my model produces. I have two examples to present </br>
 
 <br>**1st Example**</br>
@@ -59,8 +59,8 @@ The model was able to **maintain the tone**.
 
 ![typewriter](https://github.com/ankurkraj/NextGenAIContentGenerator/assets/84915395/054fb42f-cbbe-4471-b0ad-0e666d9e1636)
 
-## Features of my model
-I have taken care of all the points that was mentioned in the problem statement while preparing my model. Here are the features that I have been able to integrate into my model
+## 🧮 Features of my model
+<br>I have taken care of all the points that was mentioned in the problem statement while preparing my model. Here are the features that I have been able to integrate into my model</br>
 <br> (1) It can accept in many formats like **PDF, DOCX, and raw text**, adding to the versatility of the model is the fact that it can recognize the **headings** from the given input(As requried by the problem statement) when given in PDF or DOCX format, and if the heading is not there, it will **generate one on its own**. </br>
 <br> (2) There is an **image generation model** integrated with it, and the image generation model uses correct prompt to add a image relevant to the generated context. </br>
 <br> (3) Everything is done by AI, I have used multplie **LLMs in chain**, leveraging the full potential of LLMs, **a LLM is responsible for generating a prompt for another LLM, which generates the image based on this prompt**. This makes the model utilize the full potential of GenerativeAI. </br>
