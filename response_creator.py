@@ -216,8 +216,7 @@ def final_model_response(user_prompt,openai_key, serper_api_key, new_heading="-1
             dallegenerator(image, dalle_prompt_created)
             continue
         if tool.name == "Image Searcher":
-            images = tool.run(str(new_heading))
-            image_generation(images)
+            #This tool is not being used right now.
             continue
         context = context + tool.run(str(new_heading))
 
