@@ -60,7 +60,7 @@ The model was able to **maintain the tone**.
 ![typewriter](https://github.com/ankurkraj/NextGenAIContentGenerator/assets/84915395/054fb42f-cbbe-4471-b0ad-0e666d9e1636)
 
 ## 🧮 Features of my model
-I have taken care of all the points that was mentioned in the problem statement while preparing my model. Here are the features that I have been able to integrate into my model
+<br>I have taken care of all the points that was mentioned in the problem statement while preparing my model. Here are the features that I have been able to integrate into my model</br>
 <br> (1) It can accept in many formats like **PDF, DOCX, and raw text**, adding to the versatility of the model is the fact that it can recognize the **headings** from the given input(As requried by the problem statement) when given in PDF or DOCX format, and if the heading is not there, it will **generate one on its own**. </br>
 <br> (2) There is an **image generation model** integrated with it, and the image generation model uses correct prompt to add a image relevant to the generated context. </br>
 <br> (3) Everything is done by AI, I have used multplie **LLMs in chain**, leveraging the full potential of LLMs, **a LLM is responsible for generating a prompt for another LLM, which generates the image based on this prompt**. This makes the model utilize the full potential of GenerativeAI. </br>
