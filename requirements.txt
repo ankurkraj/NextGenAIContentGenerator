@@ -8,3 +8,4 @@ openai
 pdfminer
 python-docx
 tiktoken
+wikipedia
