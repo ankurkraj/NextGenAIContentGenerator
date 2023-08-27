@@ -14,8 +14,8 @@ import time
 
 #The logo of the competition 'TechSurf 2023'
 # and the company 'ContentStack'
-image1 = Image.open('symbo.png')
-image2 = Image.open("new_symbo.png")
+image1 = Image.open('symbo.PNG')
+image2 = Image.open("new_symbo.PNG")
 
 #initializing variables
 heading = "-1"
