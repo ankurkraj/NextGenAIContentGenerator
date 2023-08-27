@@ -20,8 +20,10 @@ I have deployed the app at https://techsurf2023.streamlit.app/, and you can acce
 (1) Clone this repository (https://github.com/ankurkraj/NextGenAIContentGenerator)
 (2) In the terminal open the folder of this repository
 (3) You will need OpenAI API Key and Serper API key to run it locally, in the deployed version I have already bought one and put it, but if you wish to run it locally in the folder of the repo kindly create a folder by the name of ".streamlit" -> then create a file by the name of "secrets.toml". In secrets.toml you would need to add two variables in the following manner
+
 > openai_key = "YOUR_KEY"
 > serper_api_key = "YOUR KEY
+
 OpenAI API Key can be obtained from https://platform.openai.com/account/api-keys and the Serper API key from https://serper.dev/. In case you face any issues with obtaining the API key, you can mail me at mr.anon57@gmail.com and I will send you my keys which you can use for running it locally
 (4) Run the following command 
 `pip install requirements.txt`
