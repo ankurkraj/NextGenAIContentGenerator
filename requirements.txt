@@ -1,0 +1,9 @@
+fpdf2
+pathlib
+PIL
+streamlit
+pdf2docx
+openai
+pdfminer
+docx
+tiktoken
