@@ -1,8 +1,8 @@
 # TechSurf 2023 by ContentStack
 Submission by Ankur Kumar Raj for problem statement 2.
 ## About me
-A brief introduction about myself.
-Hi, My name is Ankur Kumar Raj, I am a final year undergraduate at IIT Kanpur, my primary interests include competitive programming, machine learning and deep learning.
+A brief introduction about myself. |
+Hi, My name is Ankur Kumar Raj, I am a final year undergraduate at IIT Kanpur, my primary interests include competitive programming, machine learning and deep learning. |
 Officially registered email ID on unstop - mr.anon57@gmail.com
 College Email ID - ankurkraj20@iitk.ac.in
 
