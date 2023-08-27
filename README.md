@@ -1,5 +1,5 @@
 # TechSurf 2023 by ContentStack
-Submission by Ankur Kumar Raj for problem statement 2.
+Submission by Ankur Kumar Raj for **Problem Statement 2**.
 ## About me
 A brief introduction about myself.
 <br> Hi, My name is **Ankur Kumar Raj**, I am a final year undergraduate at IIT Kanpur, my primary interests include competitive programming, machine learning and deep learning. </br>
@@ -57,11 +57,11 @@ The model was able to **maintain the tone**.
 ![typewriter](https://github.com/ankurkraj/NextGenAIContentGenerator/assets/84915395/054fb42f-cbbe-4471-b0ad-0e666d9e1636)
 
 ## Features of my model
-<br> I have taken care all the points that was mentioned in the problem statement while preparing my model. Here are the features that I have been able to integrate into my model
-<br> (1) It can accept in many formats like PDF, DOCX, and raw text, adding to the versatility of the model is the fact that it can recognize the headings from the given input(As requried by the problem statement) when given in PDF or DOCX format, and if the heading is not there, it will generate one on its own. </br>
-<br> (2) There is an image generation model integrated with it, and the image generation model uses correct prompt to add a image relevant to the generated context. </br>
-<br> (3) Everything is done by AI, I have used multplie LLMs in chain, leveraging the full potential of LLMs, a LLM is responsible for generating a prompt for another LLM, which generates the image based on this prompt. This makes the model utilize the full potential of GenerativeAI. </br>
-<br> (4) The drawback of LLMs is that their vast knowledge is limited by time which they were trained in, to tackle this problem I have used the Google Search API and the Wikipedia API, to provide the model latest information. </br>
-<br> (5) The model can understand inputs in multiple languages, I have tried using Hindi for the model and it works extremetly well for that too, although the responses produed are still in English though.</br>
-<br> (6) The response are produced are extremely well formatted and relevant to the context that is given in input. The PDF produced is aesthetically pleasing and there has been no compromise with the quality of responses. </br>
+I have taken care all the points that was mentioned in the problem statement while preparing my model. Here are the features that I have been able to integrate into my model
+<br> (1) It can accept in many formats like **PDF, DOCX, and raw text**, adding to the versatility of the model is the fact that it can recognize the **headings** from the given input(As requried by the problem statement) when given in PDF or DOCX format, and if the heading is not there, it will **generate one on its own**. </br>
+<br> (2) There is an **image generation model** integrated with it, and the image generation model uses correct prompt to add a image relevant to the generated context. </br>
+<br> (3) Everything is done by AI, I have used multplie **LLMs in chain**, leveraging the full potential of LLMs, **a LLM is responsible for generating a prompt for another LLM, which generates the image based on this prompt**. This makes the model utilize the full potential of GenerativeAI. </br>
+<br> (4) The drawback of LLMs is that their vast knowledge is limited by time which they were trained in, **their information is limited**, to tackle this problem I have used the **Google Search API and the Wikipedia API**, to provide the model latest information. </br>
+<br> (5) The model can understand inputs in **multiple languages**, I have tried using Hindi for the model and it works extremetly well for that too, although the responses produed are still in **English** though.</br>
+<br> (6) The response are produced are **extremely well formatted** and relevant to the context that is given in input. The PDF produced is **aesthetically pleasing** and there has been no compromise with the quality of responses. </br>
 
