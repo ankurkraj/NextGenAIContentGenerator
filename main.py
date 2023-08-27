@@ -2,15 +2,17 @@ import streamlit as st
 import openai
 import os
 from PIL import Image
-import streamlit.components.v1 as components
-from pdf2docx import Converter
 from response_creator import final_model_response
 from document_formatter import heading_from_pdf
 from document_formatter import text_from_pdf
 from document_formatter import heading_from_docx
 from document_formatter import text_from_docx
+from document_formatter import heading_from_txt
+from document_formatter import text_from_txt
 from pdf_creator import response_file_pdf
 import time
+from io import StringIO
+
 
 #The logo of the competition 'TechSurf 2023'
 # and the company 'ContentStack'
@@ -67,32 +69,26 @@ with st.sidebar:
 #Extra customization features that can be added as wished
 with st.sidebar.expander(" 🛠️ Additional Low Level Customizations 🛠️", expanded=False):
     # Option to preview memory store
-    st.markdown('If you wish to provide your own API key, you can get one at [OpenAI](https://platform.openai.com/account/api-keys)')
+    st.markdown('If you wish to provide your own API keys, you can get one at [OpenAI](https://platform.openai.com/account/api-keys), [Serper](https://www.serper.dev)')
     openaikey = st.text_input("㊙️ OpenAI API Secret Key", type="password")
+    serperkey = st.text_input("㊙️ Serper API Secret Key", type="password")
     if openaikey:
         openai_key = openaikey
+    if serperkey:
+        serper_api_key = serperkey
     st.markdown("---")
-    st.markdown('By default All the output formats will be displayed. You can check any of the boxes to not display a particular output format.')
-
-    if st.checkbox("Do not preview the model OutPut"):
-        st.session_state["preview"]=False
-    if st.checkbox("Do not output PDF form of the OutPut"):
-        st.session_state["pdf"]=False
-    if st.checkbox("Do not preview DOCX(Microsoft Word) form of the OutPut"):
-        st.session_state["docx"]=False
-
-    st.markdown("---")
-    # Option to preview memory buffer
-    st.session_state['model'] = st.selectbox(
-        label="Model",
-        options=[
-            "gpt-3.5-turbo",
-            "text-davinci-003",
-            "gpt-4",
-        ],
-    )
 
 st.markdown("---")
+
+with st.sidebar:
+    st.markdown("# **⬇️ Steps to use this app ⬇️**, for more comprehensive steps you can visit [STEPS.md](https://github.com/ankurkraj/NextGenAIContentGenerator/blob/main/STEPS.md):")
+    st.markdown("-------")
+    st.markdown(" 1️⃣ Provide the input, whether in raw text, pdf or docx")
+    st.markdown(" 2️⃣ Provide a heading if you want to, if not provided, the model will generate on its own or recognize one from the PDF or DOCX file")
+    st.markdown(" 3️⃣ Provide a creativity value, the best and most factual results are obtained by keeping a **low value** ( 0 - 0.2 ), while out of the box replies are recived by higher values (0.4 - 0.7)")
+    st.markdown(" 4️⃣ Your output PDF will be generated in about 2 minutes, if it takes more than 3 minutes kindly refresh the page and try again, it often happens due to some error on openai's end")
+    st.markdown("---")
+
 
 st.markdown(':writing_hand What kind of input will you be providing ?')
 input_type = st.selectbox(
@@ -120,6 +116,12 @@ else:
             print("DOCX file recognised")
             heading = heading_from_docx(uploaded_file)
             text = text_from_docx(uploaded_file)
+        if str(uploaded_file.name)[len(str(uploaded_file.name))-4:]==".txt":
+            print("TXT file recognised")
+            stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
+            string = stringio.read()
+            heading = heading_from_txt(str(string))
+            text = text_from_txt(str(string))
 
 bool_head = st.radio(
     "Do you want to provide a heading ?",
@@ -145,29 +147,14 @@ if submit==True:
         time.sleep(4)
         response = "-1"
         response,dalle_prompt,heading = final_model_response(text, openai_key, serper_api_key, heading, Creativity)
-        heading.replace('"','')
-        heading.replace('.','')
         pdf_file = response_file_pdf(heading, dalle_prompt, response)
-        doc_file = Converter('varying_new_format.pdf')
-        doc_file.convert(heading+'.docx')
     bool_output = 1
     st.snow()
     if bool_output==1:
-        col3, col4 = st.columns(2)
-        with col3:
-            st.download_button(
-                label="Download data as PDF",
-                data=pdf_file,
-                file_name='essay' + '.pdf',
-                key="PDF Key",
-                mime='text/pdf',
-            )
-
-        with col4:
-            st.download_button(
-                label="Download data as DOCX",
-                data='heading.docx',
-                file_name='essay' + '.docx',
-                key="DOCX Key",
-                mime='text/docx',
-            )
+        st.download_button(
+            label="Download data as PDF",
+            data=pdf_file,
+            file_name='essay' + '.pdf',
+            key="PDF Key",
+            mime='text/pdf',
+        )

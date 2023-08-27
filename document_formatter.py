@@ -68,3 +68,25 @@ def text_from_docx(docx):
             s = 1
     return response
 
+def heading_from_txt(response):
+    heading = "-1"
+    s = 0
+    for t in range(len(response)):
+        if response[t] == '\n' and t < 73 and s > 0:
+            heading = response[:t]
+            response = response[t:]
+            break
+        if (response[t] >= 'a' and response[t] <= 'z') or (response[t] >= 'A' and response[t] <= 'Z'):
+            s = 1
+    return heading
+
+def text_from_txt(response):
+    s = 0
+    for t in range(len(response)):
+        if response[t] == '\n' and t < 73 and s > 0:
+            response = response[t:]
+            break
+        if (response[t] >= 'a' and response[t] <= 'z') or (response[t] >= 'A' and response[t] <= 'Z'):
+            s = 1
+    return response
+

@@ -1,0 +1,12 @@
+opencv-python
+langchain
+fpdf2
+pathlib
+Pillow
+streamlit
+pdf2docx
+openai
+pdfminer.six
+python-docx
+tiktoken
+wikipedia
